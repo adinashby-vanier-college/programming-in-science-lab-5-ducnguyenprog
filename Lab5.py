@@ -24,6 +24,7 @@ def hollow_square(n):
 def number_pattern(n):
     pattern = ""
     x = 1
+
     while x <= n:
         i = 1
         while i <= x:
@@ -37,7 +38,12 @@ def number_pattern(n):
 
 # Example: For n = 5, sum = 1 + 2 + 3 + 4 + 5 = 15
 def sum_of_natural_numbers(n):
-    return ""
+    result = 0
+
+    for i in range(n + 1):
+        result += i
+    
+    return result
 
 # Example for n = 4:
 #    *
@@ -45,6 +51,15 @@ def sum_of_natural_numbers(n):
 #  *****
 # *******
 def centered_star_pyramid(n):
-    return ""
+    result = ""
 
+    for i in range(n):
+        for j in range(n - i - 1):
+            result += " "
+        for k in range(2 * i + 1):
+            result += "*"
+
+        result += "\n"
+
+    return result.rstrip()
 
