@@ -32,8 +32,7 @@ def number_pattern(n):
             i += 1
         pattern += "\n"
         x += 1
-        
-        
+         
     return (pattern.strip())
 
 # Example: For n = 5, sum = 1 + 2 + 3 + 4 + 5 = 15
